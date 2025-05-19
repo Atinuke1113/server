@@ -1,10 +1,12 @@
 //Imoport and initialization
-const express = require('express');
-const { start } = require('pm2');
+import express from 'express';
+import cors from 'cors';
+
 const app =express();
 const PORT = process.env.PORT || 3002;
 
 //plugins used
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended:true}));
 
