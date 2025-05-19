@@ -5,7 +5,7 @@
   "main": "server.mjs",
   "scripts": {
     "dev": "nodemon server.mjs",
-    "start": "pm2-runtime server.mjs"
+    "start": "pm2-runtime start server.mjs"
 
   },
   "keywords": [],
